@@ -40,10 +40,20 @@ HC-05 RX is 3.3V tolerant, safe for PA9.
 
 Project Structure -
 
-<img width="546" height="370" alt="image" src="https://github.com/user-attachments/assets/9ec7480e-e296-4c20-b498-48fd21ca65cc" />
-
-
-
+```
+Bluetooth/
+ ├── Core/
+ │   ├── Inc/
+ │   ├── Src/
+ │       ├── main.c        <-- UART + Bluetooth logic
+ │       ├── stm32f0xx_it.c
+ │       └── system_stm32f0xx.c
+ ├── Drivers/
+ ├── Bluetooth.ioc         <-- CubeMX configuration
+ ├── .project
+ ├── .cproject
+ └── .mxproject
+```
 
 
 How the Code Works -
