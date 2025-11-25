@@ -1,10 +1,10 @@
-** STM32F072RB Bluetooth UART Control (HC-05/HC-06) — STM32CubeIDE Project**
+# STM32F072RB Bluetooth UART Control (HC-05/HC-06) — STM32CubeIDE Project
 
 This repository contains a complete "STM32CubeIDE project" for the "STM32 Nucleo-F072RB" board that interfaces with a "Bluetooth module (HC-05 / HC-06)" using "USART1 (PA9–TX, PA10–RX)".
 The project demonstrates "UART communication with interrupt handling" and "LED control via Bluetooth" using simple character commands.
 
 
-Project Features -
+# Project Features -
 
 Fully configured "STM32CubeIDE project"
 "USART1 @ 9600 baud" for Bluetooth communication
@@ -14,7 +14,7 @@ Extremely beginner-friendly structure
 Ready to flash on "Nucleo-F072RB"
 
 
-Hardware Used -
+# Hardware Used -
 
 | Component            | Details                    |
 | -------------------- | -------------------------- |
@@ -25,7 +25,7 @@ Hardware Used -
 
 
 
-Wiring Connections -
+# Wiring Connections -
 
 | Bluetooth Module | STM32F072RB Pin      |
 | ---------------- | -------------------- |
@@ -38,7 +38,7 @@ HC-05 RX is 3.3V tolerant, safe for PA9.
 
 
 
-Project Structure -
+# Project Structure -
 
 ```
 Bluetooth/
@@ -56,7 +56,7 @@ Bluetooth/
 ```
 
 
-How the Code Works -
+# How the Code Works -
 
 1. UART Initialization
 USART1 is initialized at "9600 baud", 8-N-1, bidirectional mode.
@@ -87,7 +87,7 @@ The system runs fully on interrupts and requires no polling.
 
 
 
-How to Test Using Android Bluetooth App
+# How to Test Using Android Bluetooth App -
 
 1. Pair mobile with "HC-05 / 06"
    Default password: "1234" or "0000"
@@ -100,7 +100,7 @@ How to Test Using Android Bluetooth App
    * " O " → LED ON
    * " X " → LED OFF
 
-Build & Flash Instructions -
+# Build & Flash Instructions -
 
 1. Open "STM32CubeIDE"
 2. Select "File → Import → Existing Projects into Workspace"
@@ -113,7 +113,7 @@ The firmware will be flashed and start running immediately.
 
 
 
-Bluetooth Commands -
+# Bluetooth Commands -
 
 | Character | Action  |
 | --------- | ------- |
@@ -121,14 +121,14 @@ Bluetooth Commands -
 | **X**     | LED OFF |
 
 
-Dependencies -
+# Dependencies -
 
 * STM32CubeIDE (v1.14+ recommended)
 * HAL Library for STM32F0 series
 * ARM GCC toolchain (Bundled with CubeIDE)
 
 
-License -
+# License -
 
 This project uses STM32 HAL under ST’s license terms.
 Your custom application code can be used freely.
