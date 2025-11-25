@@ -1,4 +1,4 @@
- STM32F072RB Bluetooth UART Control (HC-05/HC-06) — STM32CubeIDE Project
+** STM32F072RB Bluetooth UART Control (HC-05/HC-06) — STM32CubeIDE Project**
 
 This repository contains a complete "STM32CubeIDE project" for the "STM32 Nucleo-F072RB" board that interfaces with a "Bluetooth module (HC-05 / HC-06)" using "USART1 (PA9–TX, PA10–RX)".
 The project demonstrates "UART communication with interrupt handling" and "LED control via Bluetooth" using simple character commands.
